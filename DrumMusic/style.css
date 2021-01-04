@@ -7,7 +7,16 @@ body{
 
 .keys{
     display: flex;
+    justify-items: flex-start;
+    justify-content: space-around;
     color: crimson;
     padding:100px;
+    margin-top: 180px;
 
+}
+
+.key{
+    border-radius: 2px;
+    padding: 20px;
+    border: 1px solid black;
 }
