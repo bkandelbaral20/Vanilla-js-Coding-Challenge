@@ -1,0 +1,13 @@
+
+
+body{
+    font-family: "Apple Braille";
+    font-size: 25px;
+}
+
+.keys{
+    display: flex;
+    color: crimson;
+    padding:100px;
+
+}
