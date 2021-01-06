@@ -1,0 +1,14 @@
+body {
+    width: 100px;
+    font-family: "Apple Braille";
+    background-image: url("https://images.pexels.com/photos/2748756/pexels-photo-2748756.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+}
+
+.clock{
+    height:250px;
+    width: 250px;
+    background-color: rosybrown;
+    border-radius: 50%;
+    display: inline-block;
+}
