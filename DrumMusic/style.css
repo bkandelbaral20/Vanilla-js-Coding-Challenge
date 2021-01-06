@@ -3,6 +3,12 @@
 body{
     font-family: "Apple Braille";
     font-size: 25px;
+    background-image: url("https://images.pexels.com/photos/814133/pexels-photo-814133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") ;
+    background-repeat: no-repeat;
+}
+h3{
+    color: cornsilk;
+    margin-top: 100px;
 }
 
 .keys{
@@ -10,26 +16,26 @@ body{
     justify-items: flex-start;
     justify-content: space-around;
     color: crimson;
-    padding:100px;
-    margin-top: 180px;
+    margin-top: 120px;
 
 }
 
-.playing {
+.press {
     transform: scale(1.1);
     border-style: dotted;
     border-color: darkblue;
-    box-shadow: 0 0 10px royalblue;
+    box-shadow: 0 0 10px darkblue;
 }
 
 .key{
     padding: 20px;
-    border: 3px solid black;
+    border: 5px solid mintcream;
     border-radius: 10px;
+    background: rgba(0,0,0,0.8);
     transition: all 0.07s;
 }
 
 .music{
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: capitalize;
 }
