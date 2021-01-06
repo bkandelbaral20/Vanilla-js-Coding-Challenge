@@ -21,7 +21,25 @@ window.addEventListener('keydown', function (e) {
     sound.currentTime = 0;
     sound.play();
 
-//    adding new class into key so that it will show the transform style
+//  Adding new class into key so that it will show the transform style
     key.classList.add('press');
 
 });
+
+/*
+ we have added the press class which will display the transform whenever user press on keycode but we also need
+ to remove that effect because it looks weird if all keys are transform.
+ */
+
+function removeStyle(e){
+    //if it is not keycode then exit the function
+    if (e.propertyName !== 'transform') return;
+    //then remove press class
+    this.classList.remove('press');
+}
+ const keys = document.querySelectorAll('.key');
+ //we are ending style for every key
+ keys.forEach(key => key.addEventListener('styleEnd', removeStyle));
+
+
+
