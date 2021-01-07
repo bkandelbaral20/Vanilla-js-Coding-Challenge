@@ -1,39 +1,39 @@
 
-*{
+* {
     margin: 0;
     padding: 0 ;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Apple Braille";
-    /*background-image: url("https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");*/
+    background-image: url("https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: cornflowerblue;
 }
 
 .clock {
     width: 20rem;
     height: 20rem;
-    border: 10px solid white;
-    background-color: whitesmoke;
+    border: 20px solid white;
+    border-radius: 50%;
+    background-color: bisque;
     margin: 50px auto;
+    margin-top: 10%;
     position: relative;
     padding : 2rem ;
-    box-shadow: cornsilk;
+    /*animation: mymove 5s infinite;*/
 }
 
 .center{
-    height:10px;
-    width:10px;
-    background-color: crimson;
+    height:15px;
+    width:15px;
+    background-color: saddlebrown;
     border-radius: 50%;
     z-index: 2;
     position: absolute;
-    margin-top: 50%;
+    margin-top: 48%;
     margin-left: 47%;
-;
+    transform: scale(1);
 }
 
 .clock-face {
@@ -45,17 +45,16 @@ body {
 .hand {
     width: 50%;
     height: 3px;
-    background-color: darkolivegreen;
+    background-color: darkgreen;
     position: absolute;
     top: 50%;
     transform-origin: 100%; /* By default it is 50% */
     transform: rotate(90deg); /* it is used to rotate the hands line on 12:00 */
     transition: all 0.10s;
     transition-timing-function: cubic-bezier(0.42, 0, 0, 1.37);
-
 }
 
-.hand-hour{
-    color: crimson;
-}
-
+/*@keyframes mymove {*/
+/*    from {top: 200px;}*/
+/*    to {bottom: 200px;}*/
+/*}*/
