@@ -49,11 +49,19 @@
 function open() {
     this.classList.toggle("open");
 }
+function active() {
+    //checking if this class have flex property
+    if(e.propertyName.includes("flex")) {
+        this.classList.toggle("open-active");
+    }
+}
+
 
      //creating variable for selecting all img panel
      const pictures = document.querySelectorAll(".pic");
 // now looping through each pannel
  pictures.forEach(pic => pic.addEventListener('click', open ));
+pictures.forEach(pic => pic.addEventListener('transitionend', active ));
 
 </script>
 </body>
