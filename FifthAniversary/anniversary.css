@@ -1,4 +1,20 @@
+*{
+    margin:0 ;
+}
+
 html{
     font-family: Avenir;
     font-size: 29px;
+    box-sizing: border-box;
+    background-color: coral;
+}
+.pics{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pic {
+    align-items: center;
+    background-color: cornflowerblue;
+    text-align: center;
 }
