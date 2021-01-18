@@ -9,6 +9,35 @@ html {
     background-color: coral;
 }
 
+/* Adding all the images into 5 divs */
+
+.pic {
+    background-position: center;
+    background-size: cover;
+}
+
+.pic1{
+    background-image: url("https://images.pexels.com/photos/4046710/pexels-photo-4046710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.pic2 {
+    background-image: url("https://media.istockphoto.com/vectors/marble-texture-background-golden-stone-vector-id1136381674?k=6&m=1136381674&s=612x612&w=0&h=cKwLJZpjL-MU0BitaWobEUp-pOb78Jn0oG2y8wt4Si8=");
+}
+.pic3{
+    background-image: url("https://images.pexels.com/photos/5987164/pexels-photo-5987164.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+.pic4{
+    background-image: url("https://media.istockphoto.com/photos/white-gold-marble-texture-pattern-background-with-high-resolution-picture-id1155089122?k=6&m=1155089122&s=612x612&w=0&h=yKp2sLqaKK2ymCUyHlRM4zMHpTJat0St7HO_yJeSUB4=");
+}
+
+.pic5{
+    background-image: url("https://images.pexels.com/photos/4046753/pexels-photo-4046753.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+
+
+
 .pics {
     height: 100vh;
     overflow: hidden;
@@ -59,5 +88,5 @@ html {
 /* If pic is click then make it size bigger */
 .pic.open {
     font-size: 50px;
-    flex: 5; /*It will grow 5 times the amount of that pic or rest of other pics */
+    flex: 4; /*It will grow 4 times the amount of that pic or rest of other pics */
 }

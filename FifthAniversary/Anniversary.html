@@ -61,6 +61,8 @@ function active() {
      const pictures = document.querySelectorAll(".pic");
 // now looping through each pannel
  pictures.forEach(pic => pic.addEventListener('click', open ));
+
+// this is for taking all the p tags at the div
 pictures.forEach(pic => pic.addEventListener('transitionend', active ));
 
 </script>
