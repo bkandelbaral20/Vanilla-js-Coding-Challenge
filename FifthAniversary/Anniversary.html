@@ -43,6 +43,18 @@
     </div>
 
 </div>
+<script>
+<!--    selecting all pictures panel for toggling effects -->
 
+function open() {
+    this.classList.toggle("open");
+}
+
+     //creating variable for selecting all img panel
+     const pictures = document.querySelectorAll(".pic");
+// now looping through each pannel
+ pictures.forEach(pic => pic.addEventListener('click', open ));
+
+</script>
 </body>
 </html>
