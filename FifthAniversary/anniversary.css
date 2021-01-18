@@ -11,10 +11,27 @@ html{
 .pics{
     height: 100vh;
     overflow: hidden;
+    display: flex;
 }
 
 .pic {
     align-items: center;
     background-color: cornflowerblue;
     text-align: center;
+    flex: 1; /* distribute evenly in whole div by covering it */
+    background-size:cover;
+    background-position: center;
+    justify-content: center;
+    display: flex; /* for p tag */
+    flex-direction: column; /* To put the p tag in column  */
+
+}
+
+/*this is for each pics children*/
+
+.pic > * {
+    width: 100%;
+    flex: 1 0 auto; /* to grow p tags at the top, center, and bottom of the page */
+    display: flex;
+    justify-content: center; /* Makes the p tags into center of each div */
 }
